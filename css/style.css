@@ -26,12 +26,15 @@ input, button, textarea, select {
 --white:#FFFFFF;
 }
 *{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
 body{
-margin:0;
-background:var(--bg-page);
-font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-color:var(--ink);
+  margin:0;
+  background:var(--bg-page);
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  color:var(--ink);
+  min-height:100vh;
 }
+/* ---------- Hero / About card ---------- */
 .card{
 display:grid;
 grid-template-columns:1fr 1fr;
