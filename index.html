@@ -9,35 +9,56 @@
     <link rel="alternate icon" href=./assets/favicon.png> 
 </head>
 <body>
-    <div class="card">
-        <div class="photo">
-            <img src="./assets/profile-fs.jpg" class="profile" alt="profile picture">
-        </div>
-        <div class="panel">
-            <p class="eyebrow">About me</p>
-            <h1>Data Engineer &
-                <br>Computational Social Scientist
-            </h1>
-            <div class="rule"></div>
-            <p class="bio">
-                <strong>I am a data engineer </strong> 
-                with a major in Computational Social Science.
-                I thrive in interdisciplinary environments and enjoy collaborating 
-                with people from diverse backgrounds.
-            </p>
-            <p class="bio">
-                I enjoy posing for photoshoots in my free time in case you can't tell 
-                from my profile picture 👾
-            </p>
-            <div class="buttons">
-                <a href="./files/yuntsz_resume_aug26_v2.pdf" class="btn primary">Resume</a>
-                <a href="mailto:yuntsz2001@gmail.com" class="btn">Contact</a>
+
+    <nav class="navbar">
+        <a href="#about" class="nav-logo">Yun-Tsz Tsai | Clara</a>
+        <div class="nav-right">
+            <a href="#about" class="nav-link">Home</a>
+            <div class="dropdown">
+                <button class="dropdown-trigger" type="button" aria-haspopup="true" aria-expanded="false">
+                    Menu<span class="chevron"></span>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="#Projects">Projects</a>
+                    <a href="#Blog">Writing</a>
+                </div>
             </div>
-            <p class="footer">I hand coded the entire website myself with some help from Claude 
-                in terms of visual design and layout,  
-                which is why it looks like this atm 🙃</p>
+            <a href="mailto:yuntsz2001@gmail.com" class="nav-link">Contact</a>
         </div>
-    </div>
-    
+    </nav>
+
+    <section id="about">
+        <div class="card">
+            <div class="photo">
+                <img src="./assets/profile-fs.jpg" class="profile" alt="profile picture">
+            </div>
+            <div class="panel">
+                <p class="eyebrow">About me</p>
+                <h1>Data Engineer &
+                    <br>Computational Social Scientist
+                </h1>
+                <div class="rule"></div>
+                <p class="bio">
+                    <strong>I am a data engineer </strong> 
+                    with a major in Computational Social Science.
+                    I thrive in interdisciplinary environments and enjoy collaborating 
+                    with people from diverse backgrounds.
+                </p>
+                <p class="bio">
+                    I enjoy posing for photoshoots in my free time in case you can't tell 
+                    from my profile picture 👾
+                </p>
+                <div class="buttons">
+                    <a href="./files/yuntsz_resume_aug26_v2.pdf" target="_blank" class="btn primary">Resume</a>
+                    <a href="mailto:yuntsz2001@gmail.com" class="btn">Email me</a>
+                </div>
+                <p class="footer">I hand coded the entire website myself with some help from Claude 
+                    in terms of visual design and layout,  
+                    which is why it looks like this atm 🙃</p>
+                </div>
+            </div>
+    </section>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>

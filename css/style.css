@@ -34,6 +34,90 @@ body{
   color:var(--ink);
   min-height:100vh;
 }
+/* ---------- Navbar ---------- */
+.navbar{
+  position:sticky;
+  /* position:relative; */
+  top:0;
+  z-index:50;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:18px 40px;
+  background:var(--white);
+  border-bottom:1px solid var(--line);
+}
+.nav-logo{
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:20px;
+  color:var(--ink);
+  text-decoration:none;
+}
+.nav-right{
+  display:flex;
+  align-items:center;
+  gap:28px;
+
+}
+.nav-link{
+  font-size:14px;
+  color:var(--ink);
+  text-decoration:none;
+  font-weight:500;
+}
+.nav-link:hover{
+  color:var(--accent);
+}
+.dropdown{
+  position:relative;
+}
+.dropdown-trigger{
+  font-size:14px;
+  font-weight:500;
+  color:var(--ink);
+  background:none;
+  border:none;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap: 6px;
+  font-family:inherit;
+  padding:0;
+} 
+.dropdown-trigger:hover{
+  color:var(--accent);
+}
+.dropdown-trigger .chevron{
+  width: 9px;
+  height: 9px;
+  border-right:1.5px solid currentColor;
+  border-bottom:1.5px solid currentColor;
+  transform:rotate(45deg);
+  transition:transform 0.15s ease;
+  margin-top:-3px;
+}
+.dropdown.open .chevron{
+  transform:rotate(225deg);
+  margin-top:3px;
+}
+.dropdown-menu{
+  position:absolute;
+  top:calc(100% + 14px);
+  left:50%;
+  transform:translateX(-50%);
+  background:var(--white);
+  border:1px solid var(--line);
+  box-shadow:0 6px 16px rgba(0,0,0,0.06);
+  min-width:180px;
+  padding: 6px;
+  display:none;
+  flex-direction:column;
+}
+.dropdown.open .dropdown-menu{
+  display:flex;
+}
+
+
 /* ---------- Hero / About card ---------- */
 .card{
 display:grid;
